@@ -1,0 +1,2 @@
+Ovo je samo pocetak nemam jos nista vizuelno a i nisam pokusavao stvari koje kucam ali je sve isplanirano i ostalo je jos samo da se iskuca.
+Posto nema slika nema ni slika kako izgleda je l bi bilo besmisleno.
