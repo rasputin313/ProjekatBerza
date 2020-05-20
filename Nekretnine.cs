@@ -6,30 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProjekatBerza
 {
-    enum VrstaSmestaja
+   public enum VrstaSmestaja
     {
         Stan,
         Kuca
     }
-    class Nekretnine
+    public class Nekretnine
     {
-        private double x;
-
-        public double X
-        {
-            get { return x; }
-            set { x = value; }
-        }
-
-
-        private double y;
-
-        public double Y
-        {
-            get { return y; }
-            set { y = value; }
-        }
-
 
         private double vrednostNekretnine;
 
@@ -49,12 +32,12 @@ namespace ProjekatBerza
         }
 
 
-        private List<double> prethodneCene = new List<double>();
+       /* private List<double> prethodneCene = new List<double>();
 
         public List<double> PrethodneCene
         {
             get { return prethodneCene; }
-        }
+        }*/
 
 
         private double cenaClanarine;
@@ -65,14 +48,12 @@ namespace ProjekatBerza
             set { cenaClanarine = value; }
         }
 
-        public Nekretnine(double x, double y, double vrednostNekretnine, VrstaSmestaja tipSmestaja, double cenaClanarine, int IPO)
+        public Nekretnine(double vrednostNekretnine, VrstaSmestaja tipSmestaja, double cenaClanarine/*, int IPO*/)
         {
-            this.x = x;
-            this.y = y;
             this.vrednostNekretnine = vrednostNekretnine;
             this.tipSmestaja = tipSmestaja;
             this.cenaClanarine = cenaClanarine;
-            prethodneCene.Add(IPO);
+            //prethodneCene.Add(IPO);
         }
     }
 }

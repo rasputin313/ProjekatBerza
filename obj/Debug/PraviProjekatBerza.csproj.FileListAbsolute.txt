@@ -1,0 +1,11 @@
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.csprojAssemblyReference.cache
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.frmMeni.resources
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.Properties.Resources.resources
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.csproj.GenerateResource.cache
+D:\Programiranje C#\Blok\PraviProjekatBerza\bin\Debug\PraviProjekatBerza.exe.config
+D:\Programiranje C#\Blok\PraviProjekatBerza\bin\Debug\PraviProjekatBerza.exe
+D:\Programiranje C#\Blok\PraviProjekatBerza\bin\Debug\PraviProjekatBerza.pdb
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.exe
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.pdb
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.frmOsoba.resources
+D:\Programiranje C#\Blok\PraviProjekatBerza\obj\Debug\PraviProjekatBerza.frmBerza.resources

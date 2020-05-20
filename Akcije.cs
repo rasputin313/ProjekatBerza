@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PraviProjekatBerza;
 
 namespace ProjekatBerza
 {
-    class Akcije
+    public class Akcije
     {
         private string imeAkcije;
 
@@ -26,6 +27,15 @@ namespace ProjekatBerza
         }
 
 
+        private int broj;
+
+        public int Broj
+        {
+            get { return broj; }
+            set { broj = value; }
+        }
+
+
         private List<double>prethodneCene = new List<double>();
 
         public List<double> PrethodneCene
@@ -34,11 +44,18 @@ namespace ProjekatBerza
         }
 
 
-        public Akcije(string imeAkcije, double vrednostAkcije, double IPO)
+        public Akcije(string imeAkcije, double vrednostAkcije, double IPO, int broj)
         {
             this.imeAkcije = imeAkcije;
             this.vrednostAkcije = vrednostAkcije;
             prethodneCene.Add(IPO);
+            this.broj = broj;
+        }
+        public Akcije()
+        {
+            imeAkcije = "ImeAkcije";
+            vrednostAkcije = 100;
+            broj = 10;
         }
 
     }

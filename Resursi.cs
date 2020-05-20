@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProjekatBerza
 {
-    enum VrstaResursa
+    public enum VrstaResursa
     {
         Zlato,
         Nafta,
         Dijamanti
     }
-    class Resursi
+    public class Resursi
     {
         private string zemljaPorekla;
 
@@ -41,20 +41,29 @@ namespace ProjekatBerza
         }
 
 
-        private List<double> prethodneCene = new List<double>();
+        /* private List<double> prethodneCene = new List<double>();
 
-        public List<double> PrethodneCene
+         public List<double> PrethodneCene
+         {
+             get { return prethodneCene; }
+         }*/
+
+
+        private int broj;
+
+        public int Broj
         {
-            get { return prethodneCene; }
+            get { return broj; }
+            set { broj = value; }
         }
 
-
-        public Resursi(string zemljaPorekla, double vrednostResursa, VrstaResursa tipResursa, int IPO)
+        public Resursi(string zemljaPorekla, double vrednostResursa, VrstaResursa tipResursa/*, int IPO*/, int broj)
         {
             this.zemljaPorekla = zemljaPorekla;
             this.vrednostGrama = vrednostResursa;
             this.tipResursa = tipResursa;
-            prethodneCene.Add(IPO);
+            //prethodneCene.Add(IPO);
+            this.broj = broj;
         }
     }
 }

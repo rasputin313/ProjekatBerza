@@ -7,19 +7,38 @@ using System.Threading.Tasks;
 
 namespace PraviProjekatBerza
 {
-    class Berza
+    public class Berza
     {
-        List<Akcije> listaAkcija = new List<Akcije>();
-        List<int> brojAkcija = new List<int>();
 
-        List<Nekretnine> listaNekretnina = new List<Nekretnine>();
-        List<int> brojNekretnina = new List<int>();
+        private List<Akcije> listaAkcija = new List<Akcije>();
 
-        List<Resursi> listaResursa = new List<Resursi>();
-        List<int> brojGrama = new List<int>();
+        public List<Akcije> ListaAkcija
+        {
+            get { return listaAkcija; }
+            set { listaAkcija = value; }
+        }
+
+       // private List<int> brojAkcija = new List<int>();
+
+        private List<Nekretnine> listaNekretnina = new List<Nekretnine>();
+
+        public List<Nekretnine> ListaNekretnina
+        {
+            get { return listaNekretnina; }
+            set { listaNekretnina = value; }
+        }
+       // private List<int> brojNekretnina = new List<int>();
+
+        private List<Resursi> listaResursa = new List<Resursi>();
+        public List<Resursi> ListaResursa
+        {
+            get { return listaResursa; }
+            set { listaResursa = value; }
+        }
+        //private List<int> brojGrama = new List<int>();
 
 
-        void dodajAkciju(Akcije akcija, int broj)
+       /* void dodajAkciju(Akcije akcija, int broj)
         {
             for(int i = 0; i < listaAkcija.Count; i++)
             {
@@ -167,6 +186,6 @@ namespace PraviProjekatBerza
                     }
                 }
             }
-        }
+        }*/
     }
 }
