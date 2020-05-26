@@ -54,36 +54,83 @@ namespace PraviProjekatBerza
 
         private void btnBerza_Click(object sender, EventArgs e)
         {
-            frmBerza frmBerza = new frmBerza(berza);
+            frmBerza frmBerza = new frmBerza(berza, persona);
             if (frmBerza.ShowDialog() != DialogResult.OK)
                 return;
+
+
         }
 
         private void btnVidi_Click(object sender, EventArgs e)
         {
             string selected = this.cbAkcija.GetItemText(this.cbAkcija.SelectedItem);
-            //MessageBox.Show(selected);
-            Akcije a = new Akcije();
-            foreach(Akcije akcija in persona.ListaAkcija)
+            if(cbAkcija.SelectedItem != null)
             {
-                if (akcija.ImeAkcije == selected)
-                    a = akcija;
+                Akcije a = new Akcije();
+                foreach (Akcije akcija in persona.ListaAkcija)
+                {
+                    if (akcija.ImeAkcije == selected)
+                        a = akcija;
+                }
+                frmIzvidiAkciju frmIzvidiAkciju = new frmIzvidiAkciju(a);
+                cbAkcija.SelectedIndex = -1;
+
+                if (frmIzvidiAkciju.ShowDialog() != DialogResult.OK)
+                    return;
             }
-            frmIzvidiAkciju frmIzvidiAkciju = new frmIzvidiAkciju(a);
-            if (frmIzvidiAkciju.ShowDialog() != DialogResult.OK)
-                return;
+            else
+            {
+                MessageBox.Show("Prazno");
+            }
         }
 
         private void btnResursiIzvidi_Click(object sender, EventArgs e)
         {
+
             string selected = this.cbResursi.GetItemText(this.cbResursi.SelectedItem);
-            MessageBox.Show(selected);
+            if(cbResursi.SelectedItem != null)
+            {
+                Resursi r = new Resursi();
+                foreach (Resursi resurs in persona.ListaResursa)
+                {
+                    if (resurs.TipResursa.ToString() == selected)
+                        r = resurs;
+                }
+
+                frmResurs frmResurs = new frmResurs(r);
+                cbResursi.SelectedIndex = -1;
+
+                if (frmResurs.ShowDialog() != DialogResult.OK)
+                    return;
+            }
+            else
+            {
+                MessageBox.Show("Prazno");
+            }
         }
 
         private void btnNekretnineIzvidi_Click(object sender, EventArgs e)
         {
             string selected = this.cbNekretnine.GetItemText(this.cbNekretnine.SelectedItem);
-            MessageBox.Show(selected);
+            if(cbNekretnine.SelectedItem != null)
+            {
+                Nekretnine n = new Nekretnine();
+                foreach (Nekretnine nekretnina in persona.ListaNekretnina)
+                {
+                    if (nekretnina.TipSmestaja.ToString() == selected)
+                        n = nekretnina;
+                }
+
+                frmIzvidiNekretninu frmNekretnina = new frmIzvidiNekretninu(n);
+                cbNekretnine.SelectedIndex = -1;
+
+                if (frmNekretnina.ShowDialog() != DialogResult.OK)
+                    return;
+            }
+            else
+            {
+                MessageBox.Show("Prazno");
+            }
         }
     }
 }

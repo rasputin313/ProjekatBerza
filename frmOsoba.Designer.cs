@@ -32,11 +32,11 @@
             this.cbNekretnine = new System.Windows.Forms.ComboBox();
             this.cbResursi = new System.Windows.Forms.ComboBox();
             this.pnlBerza = new System.Windows.Forms.Panel();
+            this.btnNekretnineIzvidi = new System.Windows.Forms.Button();
+            this.btnResursiIzvidi = new System.Windows.Forms.Button();
+            this.btnAkcijeVidi = new System.Windows.Forms.Button();
             this.btnBerza = new System.Windows.Forms.Button();
             this.btnNazad = new System.Windows.Forms.Button();
-            this.btnAkcijeVidi = new System.Windows.Forms.Button();
-            this.btnResursiIzvidi = new System.Windows.Forms.Button();
-            this.btnNekretnineIzvidi = new System.Windows.Forms.Button();
             this.pnlBerza.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +83,36 @@
             this.pnlBerza.Size = new System.Drawing.Size(781, 327);
             this.pnlBerza.TabIndex = 3;
             // 
+            // btnNekretnineIzvidi
+            // 
+            this.btnNekretnineIzvidi.Location = new System.Drawing.Point(566, 100);
+            this.btnNekretnineIzvidi.Name = "btnNekretnineIzvidi";
+            this.btnNekretnineIzvidi.Size = new System.Drawing.Size(75, 23);
+            this.btnNekretnineIzvidi.TabIndex = 7;
+            this.btnNekretnineIzvidi.Text = "Izvidi";
+            this.btnNekretnineIzvidi.UseVisualStyleBackColor = true;
+            this.btnNekretnineIzvidi.Click += new System.EventHandler(this.btnNekretnineIzvidi_Click);
+            // 
+            // btnResursiIzvidi
+            // 
+            this.btnResursiIzvidi.Location = new System.Drawing.Point(312, 100);
+            this.btnResursiIzvidi.Name = "btnResursiIzvidi";
+            this.btnResursiIzvidi.Size = new System.Drawing.Size(75, 23);
+            this.btnResursiIzvidi.TabIndex = 6;
+            this.btnResursiIzvidi.Text = "Izvidi";
+            this.btnResursiIzvidi.UseVisualStyleBackColor = true;
+            this.btnResursiIzvidi.Click += new System.EventHandler(this.btnResursiIzvidi_Click);
+            // 
+            // btnAkcijeVidi
+            // 
+            this.btnAkcijeVidi.Location = new System.Drawing.Point(63, 100);
+            this.btnAkcijeVidi.Name = "btnAkcijeVidi";
+            this.btnAkcijeVidi.Size = new System.Drawing.Size(75, 23);
+            this.btnAkcijeVidi.TabIndex = 5;
+            this.btnAkcijeVidi.Text = "Izvidi";
+            this.btnAkcijeVidi.UseVisualStyleBackColor = true;
+            this.btnAkcijeVidi.Click += new System.EventHandler(this.btnVidi_Click);
+            // 
             // btnBerza
             // 
             this.btnBerza.Location = new System.Drawing.Point(566, 277);
@@ -102,36 +132,6 @@
             this.btnNazad.Text = "Meni";
             this.btnNazad.UseVisualStyleBackColor = true;
             this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
-            // 
-            // btnAkcijeVidi
-            // 
-            this.btnAkcijeVidi.Location = new System.Drawing.Point(63, 100);
-            this.btnAkcijeVidi.Name = "btnAkcijeVidi";
-            this.btnAkcijeVidi.Size = new System.Drawing.Size(75, 23);
-            this.btnAkcijeVidi.TabIndex = 5;
-            this.btnAkcijeVidi.Text = "Izvidi";
-            this.btnAkcijeVidi.UseVisualStyleBackColor = true;
-            this.btnAkcijeVidi.Click += new System.EventHandler(this.btnVidi_Click);
-            // 
-            // btnResursiIzvidi
-            // 
-            this.btnResursiIzvidi.Location = new System.Drawing.Point(312, 100);
-            this.btnResursiIzvidi.Name = "btnResursiIzvidi";
-            this.btnResursiIzvidi.Size = new System.Drawing.Size(75, 23);
-            this.btnResursiIzvidi.TabIndex = 6;
-            this.btnResursiIzvidi.Text = "Izvidi";
-            this.btnResursiIzvidi.UseVisualStyleBackColor = true;
-            this.btnResursiIzvidi.Click += new System.EventHandler(this.btnResursiIzvidi_Click);
-            // 
-            // btnNekretnineIzvidi
-            // 
-            this.btnNekretnineIzvidi.Location = new System.Drawing.Point(566, 100);
-            this.btnNekretnineIzvidi.Name = "btnNekretnineIzvidi";
-            this.btnNekretnineIzvidi.Size = new System.Drawing.Size(75, 23);
-            this.btnNekretnineIzvidi.TabIndex = 7;
-            this.btnNekretnineIzvidi.Text = "Izvidi";
-            this.btnNekretnineIzvidi.UseVisualStyleBackColor = true;
-            this.btnNekretnineIzvidi.Click += new System.EventHandler(this.btnNekretnineIzvidi_Click);
             // 
             // frmOsoba
             // 

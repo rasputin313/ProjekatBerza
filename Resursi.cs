@@ -14,14 +14,6 @@ namespace ProjekatBerza
     }
     public class Resursi
     {
-        private string zemljaPorekla;
-
-        public string ZemljaPorekla
-        {
-            get { return zemljaPorekla; }
-            set { zemljaPorekla = value; }
-        }
-
 
         private double vrednostGrama;
 
@@ -41,14 +33,6 @@ namespace ProjekatBerza
         }
 
 
-        /* private List<double> prethodneCene = new List<double>();
-
-         public List<double> PrethodneCene
-         {
-             get { return prethodneCene; }
-         }*/
-
-
         private int broj;
 
         public int Broj
@@ -57,13 +41,17 @@ namespace ProjekatBerza
             set { broj = value; }
         }
 
-        public Resursi(string zemljaPorekla, double vrednostResursa, VrstaResursa tipResursa/*, int IPO*/, int broj)
+        public Resursi( double vrednostResursa, VrstaResursa tipResursa, int broj)
         {
-            this.zemljaPorekla = zemljaPorekla;
             this.vrednostGrama = vrednostResursa;
             this.tipResursa = tipResursa;
-            //prethodneCene.Add(IPO);
             this.broj = broj;
+        }
+        public Resursi()
+        {
+            vrednostGrama = 10;
+            tipResursa = VrstaResursa.Zlato;
+            broj = 100;
         }
     }
 }

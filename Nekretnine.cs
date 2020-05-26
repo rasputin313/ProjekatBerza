@@ -32,14 +32,6 @@ namespace ProjekatBerza
         }
 
 
-       /* private List<double> prethodneCene = new List<double>();
-
-        public List<double> PrethodneCene
-        {
-            get { return prethodneCene; }
-        }*/
-
-
         private double cenaClanarine;
 
         public double CenaClanarine
@@ -48,12 +40,17 @@ namespace ProjekatBerza
             set { cenaClanarine = value; }
         }
 
-        public Nekretnine(double vrednostNekretnine, VrstaSmestaja tipSmestaja, double cenaClanarine/*, int IPO*/)
+        public Nekretnine(double vrednostNekretnine, VrstaSmestaja tipSmestaja, double cenaClanarine)
         {
             this.vrednostNekretnine = vrednostNekretnine;
             this.tipSmestaja = tipSmestaja;
             this.cenaClanarine = cenaClanarine;
-            //prethodneCene.Add(IPO);
+        }
+        public Nekretnine()
+        {
+            vrednostNekretnine = 1000;
+            tipSmestaja = VrstaSmestaja.Kuca;
+            cenaClanarine = 100;
         }
     }
 }
